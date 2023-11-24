@@ -88,7 +88,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font-family: 'Montserrat', sans-serif;
   vertical-align: baseline;
   text-decoration: none;
 }
@@ -133,4 +133,22 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+h1{
+  font-size: 2.75em;
+}
+
+h2{
+  font-size: 2em;
+  color: #030140;
+}
+
+h3{
+  font-size: 1.25em;
+  color: #030140;
+}
+
+a{
+  color: #030140;
 }

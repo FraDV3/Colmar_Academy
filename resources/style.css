@@ -1,0 +1,138 @@
+/* Navbar */
+
+#navbar,
+.navlinks{
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+
+#logo{
+  height: 2.5em;
+  margin-left: 24px;
+}
+.logo{
+  height: 2.5em;
+}
+
+.colmar{
+  font-size: 1.75em;
+  color: #A69026;
+}
+
+.academy{
+  font-size: 1.75em;
+  color: #8C8C8C;
+}
+
+.navlinks,
+ul{
+  margin-left: auto;
+  column-gap: 16px;
+  margin-right: 24px;
+}
+
+
+/* Hero Section */
+
+/*assigning 60% width to the three img/vid */
+.heropic,
+.contpic,
+.thesisvid{
+  width: 55%;
+}
+
+#hero{
+  display: flex;
+  background-color: #8c8c8c;
+}
+
+.heropic{
+  margin: 32px 0 32px 24px;
+}
+
+.herotext{
+  display: block;
+  text-align: start;
+  line-height: 2.5em;
+  align-self: center;
+  padding: 24px;
+}
+
+button{
+  background-color: #D9BB25;
+  border: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 8px;
+  width: 100%;
+}
+
+h1 {
+  color: #D9BB25;
+}
+
+/* Content */
+
+#content{
+  display: grid;
+  grid-template-columns: 55% 45%;
+  background-color: #D9BB25;
+}
+
+.practicing{
+  width: 60%;
+  margin-left: 24px;
+  width: 100%;
+}
+
+.practicing > h2{
+  margin-bottom: 24px;
+}
+.practicing > p{
+  margin-bottom: 32px;
+}
+
+.contpic{
+  margin: 32px 24px;
+  grid-column-start: 1;
+  width: 100%;
+}
+/* Side */
+
+.side{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 24px;
+}
+
+.square{
+  display: flex;
+}
+
+.square > img{
+  width: 30%;
+  height: auto;
+  margin: 16px;
+  padding: 10px;
+}
+
+.sidetxt{
+  align-self: center;
+  width: 65%;
+  overflow: hidden;
+
+}
+
+.sidetxt > p{
+  font-size: 0.7500em;
+  padding: 1em;
+}
+
+.sidetxt > a{
+  color: #0f5fb0;
+}
+
+/* Courses */
+/* Thesis */
+/* Footer */
