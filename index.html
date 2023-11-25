@@ -11,6 +11,7 @@
   <title>Colmar Academy</title>
 </head>
 <body>
+
 <!-- Navbar -->
   <nav id="navbar">
     <div id="logo"><a href="#navbar"><img class="logo" src="resources/images/ic-logo.svg" alt="academy logo"></a></div>
@@ -37,6 +38,7 @@
       <a href="#"><button class="start" role="link">Start here</button></a>
     </div>
   </div>
+
   <!-- Content -->
   <div id="content">
     <div>
@@ -46,7 +48,7 @@
         <p>Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non
           accumsan
           urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.</p>
-        <p>Emanuel, Sr Strategist at Hiring.com</p>
+        <p class="emanuel">Emanuel, Sr Strategist at Hiring.com</p>
       </div>
     </div>
 
@@ -82,66 +84,97 @@
   <!-- Courses -->
   <div id="courses">
     <h2 class="start">Start learnign</h2>
-    <div class="cards">
-      <img src="resources/images/course-software.jpg" alt="">
-      <h3>Software engineering</h3>
-      <p>COURSES</p>
-      <p>Web Development, Mobile Development, iOT, APIs</p>
-    </div>
+      <div class="cards">       
+          <img src="resources/images/course-software.jpg" alt="">
+          <div class="description">
+            <h3>Software engineering</h3>
+            <p><a href="">COURSES</a></p>
+            <p>Web Development, Mobile Development, iOT, APIs</p>
+          </div>      
+      </div>
     <div class="cards">
       <img src="resources/images/course-computer-art.jpg" alt="">
-      <h3>Computer art</h3>
-      <p>COURSES</p>
-      <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+      <div class="description">
+        <h3>Computer art</h3>
+        <p><a href="">COURSES</a></p>
+        <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+      </div>
     </div>
     <div class="cards">
       <img src="resources/images/course-design.jpg" alt="">
-      <h3>Design</h3>
-      <p>COURSES</p>
-      <p>User Experience Design, User Research, Visual Design</p>
+      <div class="description">
+        <h3>Design</h3>
+        <p><a href="">COURSES</a></p>
+        <p>User Experience Design, User Research, Visual Design</p>
+      </div>
     </div>
     <div class="cards">
       <img src="resources/images/course-data.jpg" alt="">
-      <h3>Data</h3>
-      <p>COURSES</p>
-      <p>Data Science, Big Data, SQL, Data Visualization</p>
+      <div class="description">
+        <h3>Data</h3>
+        <p><a href="">COURSES</a></p>
+        <p>Data Science, Big Data, SQL, Data Visualization</p>
+      </div>
     </div>
     <div class="cards">
       <img src="resources/images/course-business.jpg" alt="">
-      <h3>Business</h3>
-      <p>COURSES</p>
-      <p>Product Development, Business Development, Startup</p>
+      <div class="description">
+        <h3>Business</h3>
+        <p><a href="">COURSES</a></p>
+        <p>Product Development, Business Development, Startup</p>
+      </div>
     </div>
     <div class="cards">
       <img src="resources/images/course-marketing.jpg" alt="">
-      <h3>Marketing</h3>
-      <p>COURSES</p>
-      <p>Analytics, Content Marketing, Mobile Marketing</p>
+      <div class="description">
+        <h3>Marketing</h3>
+        <p><a href="">COURSES</a></p>
+        <p>Analytics, Content Marketing, Mobile Marketing</p>
+      </div>
     </div>
   </div>
+
   <!-- Thesis -->
   <div id="thesis">
     <h2>Thesis Exhibit</h2>
-    <video class="thesisvid" src="resources/videos/thesis.mp4" controls></video>
-    <div class="square">
-      <img src="resources/images/thesis-fisma-square.jpg" alt="">
-      <h3>Fisma: Design and Prototype</h3>
-      <p>Designer showcase of new prototype product</p>
+    <div class="video_section">
+      <div>
+      <video src="resources/videos/thesis.mp4"></video>
+      </div>
+      <div class="urban">
+        <h3>Reimagine urban</h3>
+        <p>Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non
+          accumsan
+          urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.</p>
+       </div>
     </div>
-    <div class="square">
-      <img src="resources/images/thesis-now-and-then-square.jpg" alt="">
-      <h3>Now and then</h3>
-      <p>Research study about New York</p>
-    </div>
-      <h3>Reimagine urban</h3>
-      <p>Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan
-      urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.</p>
+  
+    <!-- Thesis Side -->
+    <div class="side">
+      <div class="square">
+        <img src="resources/images/thesis-fisma-square.jpg" alt="">
+        <div class="sidetxt">
+          <h3>Fisma: Design and Prototype</h3>
+          <p>Designer showcase of new prototype product</p>
+        </div>
+      </div>
+      <div class="square">
+        <img src="resources/images/thesis-now-and-then-square.jpg" alt="">
+        <div class="sidetxt">
+          <h3>Now and then</h3>
+          <p>Research study about New York</p>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Footer -->
-  <footer>
-    <p>©2016 Colmar Academy. All rights reserved</p>
-  </footer>
+    <footer>
+      <ul class="copyright">
+        <li class="rights">©2016 Colmar Academy. All rights reserved</li>
+        <li>Terms</li>
+        <li>Privacy</li>
+      </ul>
+    </footer>
 </body>
 </html>
