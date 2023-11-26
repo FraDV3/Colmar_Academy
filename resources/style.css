@@ -35,13 +35,14 @@ ul{
 
 /* Hero Section */
 
-/*assigning 60% width to the three img/vid */
+/* Assigning 55% width to the three img/vid */
 .heropic,
 .contpic,
 .thesisvid{
   width: 55%;
 }
 
+/* "#title_small" only visible on smalle screen sizes */
 #hero{
   display: flex;
   background-color: rgb(140, 140, 140, .9);
@@ -56,19 +57,19 @@ ul{
   text-align: start;
   line-height: 2.5em;
   align-self: center;
-  /* padding: 32px; */
   margin: 32px;
 }
 
-button{
+#start-here_btn{
   background-color: #D9BB25;
   border: none;
   font-size: 1.5em;
   font-weight: bold;
   padding: 8px;
   width: 100%;
+  border-radius: 3px;
 }
-button:hover{
+#start-here_btn:hover{
   cursor: pointer;
 }
 
@@ -77,19 +78,18 @@ h1 {
 }
 
 /* Content */
-
 #content{
   display: grid;
   grid-template-columns: 55% 45%;
   background-color: rgb(218, 188, 37, .9);
 }
 
+/* Content section text formatting */
 .practicing{
   width: 60%;
   margin-left: 24px;
   width: 100%;
 }
-
 .practicing > h2{
   margin-bottom: 24px;
 }
@@ -97,7 +97,6 @@ h1 {
   margin-bottom: 32px;
   line-height: 1.25em;
 }
-
 .emanuel{
   font-size: .8em;
 }
@@ -107,6 +106,7 @@ h1 {
   grid-column-start: 1;
   width: 100%;
 }
+
 /* Side */
 
 /* Side takes effect on the Thesis secion side boxes as well */
@@ -127,7 +127,8 @@ h1 {
 }
 
 .square > img{
-  width: 40%;
+  width: 18vw;
+  height: 18vh;
   height: auto;
   margin: 12px;
   padding: 12px;
@@ -141,7 +142,7 @@ h1 {
 }
 
 .sidetxt > p{
-  font-size: 0.7500em;
+  font-size: 0.875em;
   padding: 0.5em;
 }
 
@@ -159,7 +160,6 @@ h1 {
   background-color: rgb(140, 140, 140, .9);
   padding: 0 72px 32px;
 }
-
 
 .start{
   margin-top: 32px;
@@ -199,10 +199,12 @@ h1 {
   font-weight: bold;
   text-shadow: .5px 1.5px 2px #0f5fb045;
 }
+
 /* Thesis */
 #thesis {
   display: grid;
   grid-template-columns: 55% 45%;
+  margin-bottom: 32px;
 }
 #thesis > h2{
   margin: 32px 0;
@@ -213,10 +215,6 @@ h1 {
 div > video{
   width: 100%;
   margin: 0 24px 24px 24px;
-}
-
-.video_section{
-
 }
 
 .urban{
@@ -233,9 +231,12 @@ div > video{
   margin-bottom: 32px;
   line-height: 1.25em;
 } 
+
+.side.b{
+  grid-template-rows: 1fr 1fr;
+}
  
 /* Footer */
-
 footer{
   height: 100px;
   background-color: #D9BB25;
@@ -248,4 +249,233 @@ footer{
 /* Moves "Terms & Privacy" on the right */
 .rights{
   margin-right: auto;
+}
+
+/* Mid Breaking Point */
+@media only screen and (min-width: 900px) {
+  #title_small {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  /* Hero Section */
+  #hero{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heropic{
+    width: auto;
+    margin: 24px;
+  }
+
+  #title {
+    display: none;
+  }
+
+  #title_small {
+    text-align: center;
+    margin-top: 32px;
+  }
+
+  .colmar{
+    color: #D9BB25;
+    font-weight: 500;
+  }
+
+  .academy{
+    color: whitesmoke;
+  }
+
+  /* Content Section */
+  #content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .contpic{
+    margin: 24px 0;
+  }
+
+  .practicing{
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    font-size: 1.25em;
+  }
+
+  .practicing > p{
+    text-align: justify;
+  }
+
+  .emanuel{
+    font-size: 0.750em;
+  }
+
+  /* Side */
+  .sidetxt > p{
+    font-size: 1.25em;
+    padding: 0.5em;
+  }
+
+  .square:hover{
+    background-color: transparent;
+  }
+
+  /* Courses */
+  .start{
+    text-align: center;
+  }
+
+  #courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #courses img{
+    display: none;
+  }
+
+  .cards{
+    width: 100%;
+    height: 200px;
+    padding: 16px;
+    font-size: 1.5em;
+  }
+
+  /* Thesis */
+  #thesis {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .video_section video{
+    margin: 24px 0;
+    width: 100%;
+  }
+
+  .urban{
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    font-size: 1.25em;
+  
+  }
+
+  .urban p{
+    text-align: justify;
+  }
+  
+  .copyright{
+    font-size: 0.875em;
+  }
+}
+
+/* Mobile Version */
+@media only screen and (min-width: 500px) {
+  #nav_small{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* Hiding navbar to swap with "nav_small" vithout txt */
+  #navbar{
+    display: none;
+  }
+
+  #nav_small{
+    height: 64px;
+  }
+
+  .navlinks{
+    display: flex;
+    margin: 0;
+    padding: 0 1em;
+    align-content: center;
+  }
+
+  .nav_svg{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* Adapting font sizes for mobile devices */
+  #hero h1{
+    font-size: 2em;
+  }
+
+  .cards{
+    font-size: 1.125em;
+  }
+
+  .sidetxt > p{
+    font-size: 1em;
+  }
+
+  /* Footer */
+  .copyright {
+    display: block;
+    line-height: 1.5em;
+    font-size: 0.750em;
+    padding: 0.750em;
+  }
+
+  .rights {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .navlinks {
+    padding: 0.5em;
+  }
+
+  .square{
+    margin: 12px;
+  }
+
+  /* Hiding imgs because distorting on smaller screen sizes */
+  .side img{
+    display: none;
+  }
+
+  .sidetxt{
+    width: 100%;
+  }
+
+  /* Cards */
+  #courses{
+    padding: 0 16px 32px;
+  }
+
+  /* Reset Font Sizes */
+  #hero h1{
+    font-size: 1.75em;
+  }
+  #content h2{
+    font-size: 1.5em;
+  }
+
+  .practext{
+    font-size: 0.875em;
+  }
+
+  .emanuel{
+    font-size: 0.625em;
+  }
+
+  #thesis p{
+    font-size: 0.875em;
+  }
 }
