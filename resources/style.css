@@ -1,5 +1,4 @@
 /* Navbar */
-
 #navbar,
 .navlinks{
   display: flex;
@@ -107,7 +106,7 @@ h1 {
   width: 100%;
 }
 
-/* Side */
+/* Content Side */
 
 /* Side takes effect on the Thesis secion side boxes as well */
 .side{
@@ -232,6 +231,7 @@ div > video{
   line-height: 1.25em;
 } 
 
+/* Thesis Side */
 .side.b{
   grid-template-rows: 1fr 1fr;
 }
@@ -254,6 +254,10 @@ footer{
 /* Mid Breaking Point */
 @media only screen and (min-width: 900px) {
   #title_small {
+    display: none;
+  }
+
+  .alt_img{
     display: none;
   }
 }
@@ -294,7 +298,6 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     overflow: hidden;
   }
 
@@ -317,7 +320,11 @@ footer{
     font-size: 0.750em;
   }
 
-  /* Side */
+  /* Content Side */
+  .reg_img{
+    display: none;
+  }
+
   .sidetxt > p{
     font-size: 1.25em;
     padding: 0.5em;
@@ -388,6 +395,7 @@ footer{
 }
 
 @media only screen and (max-width: 500px) {
+  /* Navbar */
   /* Hiding navbar to swap with "nav_small" vithout txt */
   #navbar{
     display: none;
@@ -410,11 +418,33 @@ footer{
     width: 100%;
   }
 
+  /* Hero Section */
   /* Adapting font sizes for mobile devices */
   #hero h1{
     font-size: 2em;
   }
 
+  /* Content */
+  .square{
+    display: grid;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 0;
+    justify-items: center;
+  }
+
+  .sidetxt{
+    text-align: center;
+  }
+
+  .square > img{
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+
+  /* Courses */
   .cards{
     font-size: 1.125em;
   }
@@ -437,10 +467,12 @@ footer{
 }
 
 @media only screen and (max-width: 300px) {
+  /* Navbar */
   .navlinks {
     padding: 0.5em;
   }
 
+  /* Content */
   .square{
     margin: 12px;
   }
