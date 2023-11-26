@@ -252,7 +252,7 @@ footer{
 }
 
 /* Mid Breaking Point */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 850px) {
   #title_small {
     display: none;
   }
@@ -262,7 +262,7 @@ footer{
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 850px) {
 
   /* Hero Section */
   #hero{
@@ -332,6 +332,25 @@ footer{
 
   .square:hover{
     background-color: transparent;
+  }
+
+  .square {
+    display: grid;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 0;
+    justify-items: center;
+  }
+
+  .sidetxt {
+    text-align: center;
+  }
+
+  .square>img {
+    width: auto;
+    height: auto;
+    padding: 0;
   }
 
   /* Courses */
@@ -422,26 +441,6 @@ footer{
   /* Adapting font sizes for mobile devices */
   #hero h1{
     font-size: 2em;
-  }
-
-  /* Content */
-  .square{
-    display: grid;
-    width: 100%;
-    margin: 0;
-    margin-bottom: 32px;
-    padding: 0;
-    justify-items: center;
-  }
-
-  .sidetxt{
-    text-align: center;
-  }
-
-  .square > img{
-    width: auto;
-    height: auto;
-    padding: 0;
   }
 
   /* Courses */
